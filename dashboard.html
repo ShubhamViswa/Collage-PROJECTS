@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="nav">
+     🌸 Period Tracker
+     <button onclick="resetApp()" style="margin:10px;">Reset All Data</button>
+    <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+</div>
+
+<div class="container">
+
+  <!-- <h2>Period Calendar</h2>
+  <div id="calendar"></div> -->
+
+  <h2 id="monthYear"></h2>
+
+<div class="cal-nav">
+  <button onclick="prevMonth()">⬅ Prev</button>
+  <button onclick="nextMonth()">Next ➡</button>
+</div>
+
+<div id="calendar"></div>
+
+  <h3 id="result"></h3>
+
+  <h2>Cycle History</h2>
+  <canvas id="cycleChart" width="400" height="200"></canvas>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
+

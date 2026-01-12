@@ -1,0 +1,172 @@
+body {
+  font-family: 'Segoe UI';
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #ee6aa7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d94b8c;
+}
+
+.nav {
+  background: #ee6aa7;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+}
+
+.tips {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.day {
+  background: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.day:hover {
+  background: #ffe1ec;
+}
+
+.period {
+  background: #ee6aa7;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+#themeBtn {
+  float: right;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+body.dark {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+}
+
+body.dark .card,
+body.dark .day,
+body.dark .tips {
+  background: #1f2933;
+  color: white;
+}
+
+body.dark .nav {
+  background: #0f172a;
+}
+
+body.dark input {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+body.dark .period {
+  background: #ec4899;
+}
+
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  #calendar {
+    gap: 5px;
+  }
+
+  .day {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    font-size: 16px;
+  }
+}
+
+.cal-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cal-nav button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ee6aa7;
+  color: white;
+  cursor: pointer;
+}
